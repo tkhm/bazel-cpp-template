@@ -1,3 +1,6 @@
+# set c++ 14, enable all warning and extras
+build --action_env=BAZEL_CXXOPTS="-std=c++14:-Wall:-Wextra"
+
 # clang-tidy related config, brought from https://github.com/erenon/bazel_clang_tidy
 # now you can run `bazel build //... --config clang-tidy`
 # Required for bazelb_clang_tidy to operate as expected
